@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Matthew Byrd | Developer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav>
+            <h1>Matthew Byrd</h1>
+            <ul class="nav-container">
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact Me</a></li>
+            </ul>
+            <button class="three-dots" id="three-dots">
+                <span class="material-symbols-outlined">
+                    more_horiz
+                </span>
+            </button>
+        </nav>
+
+        <!--Hero Section-->
+        <section class="hero" id="about">
+            <img class="hero-img" loading="lazy" alt="matthew-byrd" src="./assets/james-harrison-vpOeXr5wmR4-unsplash.jpg" />
+            <div class="bio">
+                <h2 class="bio-title">About Me</h2>
+                <p class="bio-text">I'm a developer based in NYC. I'm particularly interested in full-stack and front-end roles but open to all sorts of opportunities.</p>
+            </div>
+        </section>
+
+        <!--More About-->
+        <section class="more-about">
+            <h2>My Background</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quibusdam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quibusdam.</p>
+        </section>
+
+        <!--Skills Section-->
+        <section class="skills" id="skills">
+            <h2 class="skills-header">My Top Skills</h2>
+            <div class="skills-wrapper">
+                <div class="first-set">
+                    <img
+                        src="./assets/icons/icons8-html-5.svg"
+                        alt="html"
+                        loading="lazy"
+                        class="icon"
+                    />
+                    <img
+                        src="./assets/icons/icons8-css3.svg"
+                        alt="css"
+                        loading="lazy"
+                        class="icon"
+                    />
+                    <img
+                        src="./assets/icons/icons8-git.svg"
+                        alt="git"
+                        loading="lazy"
+                        class="icon"
+                    />
+                </div>
+                <div class="second-set">
+                    <img
+                        src="./assets/icons/icons8-javascript.svg"
+                        alt="javascript"
+                        loading="lazy"
+                        class="icon"
+                    />
+                    <img
+                        src="./assets/icons/icons8-react-native.svg"
+                        alt="react"
+                        loading="lazy"
+                        class="icon"
+                    />
+                    <img
+                        src="./assets/icons/icons8-mongodb-480.png"
+                        alt="mongodb"
+                        loading="lazy"
+                        class="icon"
+                    />
+                    <img
+                        src="./assets/icons/icons8-nodejs-480.png"
+                        alt="nodejs"
+                        loading="lazy"
+                        class="icon"
+                    />
+                </div>
+            </div>
+        </section>
+        <!--Projects Section-->
+        <section class="projects" id='projects'>
+            <h2 class="projects-title">Highlighted Projects</h2>
+            <div class="projects-container">
+                <div class="projects-container project-card">
+                    <img
+                        src="./assets/icons/images/Screenshot 2022-06-14 140325.png"
+                        alt=""
+                        loading="lazy"
+                        class="project-pic"
+                    />
+                    <h3 class="project-title">Project 1</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, aperiam?</p>
+                    <a href="#" target="_blank" class="project-link">See it in Action</a>
+                </div>
+            </div>
+        </section>
+        <!--Contact Section-->
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-form-container">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xyylngw" method="POST">
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="sender-name"
+                                placeholder="Enter your name"
+                                class="input-field"
+                                required
+                            />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                cols="60"
+                                rows="10"
+                                placeholder="Enter your message"
+                                name="message"
+                                class="input-field"
+                                required
+                            ></textarea>
+                        </div>
+                        <input
+                            type="submit"
+                            value="Submit"
+                            id="submit-btn"
+                            class="submit-btn"
+                        />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--Social Accounts -->
+        <!--put these at the bottom?-->
+        <!--Scroll to top-->
+        <button class="scroll-up" id="scroll-up">
+            <span class="material-symbols-outlined">
+                arrow_upward
+            </span>
+        </button>
+        <!--Footer Section-->
+        <footer>
+            <p class="copy">&copy; Copyright 2022</p>
+            <p class="copy">
+                Built by Matthew Byrd
+            </p>
+        </footer>
+        <!--Website Scripts-->
+        <script src="./index.js" async defer></script>
+    </body>
+</html>
