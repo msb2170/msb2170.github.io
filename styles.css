@@ -189,11 +189,12 @@ nav ul li {
 }
 
 .project-title {
-    margin-bottom: var(--bottom-margin);
+    margin-top: 0.5rem;
+    color: black;
 }
 
 .project-description {
-    margin-bottom: var(--bottom-margin);
+    color: black;
 }
 
 .project-card {
@@ -202,7 +203,17 @@ nav ul li {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+    max-width: 33vw;
+    height: 50%;
     flex-direction: column;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card > img {
+    max-height: 50%;
 }
 
 .contact {
@@ -325,8 +336,9 @@ footer {
     }
 
     .hero img {
-        height: 27.5rem;
-        width: 30rem;
+        height: fit-content;
+        width: 20rem;
+        margin-top: 15%;
     }
 
     .bio {
