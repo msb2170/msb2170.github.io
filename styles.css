@@ -10,7 +10,6 @@
     --primary-color: black;
     --secondary-color: #c9a151;
     --primary-shadow: #8488b3;
-    --secondary-shadow: #81a10d;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -100,11 +99,6 @@ nav ul li {
     gap: 2.5rem;
     max-width: 68.75rem;
     margin: auto;
-}
-
-.hero img {
-    height: 100%;
-    width: 95%;
 }
 
 .bio {
