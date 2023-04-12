@@ -1,5 +1,6 @@
 const threeDots = document.getElementById('three-dots');
 const scrollUp = document.getElementById('scroll-up');
+const dateField = document.getElementById('date')
 
 scrollUp.addEventListener('click', () => {
     window.scrollTo({
@@ -22,3 +23,5 @@ navLink.forEach((link) =>
         ul.classList.remove('show');
     })
 );
+
+dateField.innerHTML = new Date().getFullYear()

@@ -34,7 +34,6 @@ ul {
 
 a {
     text-decoration: none;
-    
 }
 
 a:hover {
@@ -45,6 +44,7 @@ body {
     font-family: var(--font-family);
     background-color: var(--bg-color);
     color: white;
+    overflow-x: hidden;
 }
 
 nav {
@@ -298,6 +298,13 @@ footer {
     cursor: pointer;
     width: 2rem;
     height: 2rem;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
 @media screen and (max-width: 768px) {
