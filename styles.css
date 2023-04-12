@@ -371,21 +371,25 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+    .body {
+        overflow-x: hidden;
+        max-width: 80vw;
+    }
+
     .hero img {
-        height: 37.5rem;
-        width: 23rem;
+        max-width: auto;
     }
 
     .bio {
-        width: 18.3rem;
-    }
-
-    .project-container {
-        width: 17.875rem;
+        width: 80vw;
     }
 
     .contact-form-container {
-        max-width: 17.75rem;
+        max-width: 90vw;
+    }
+
+    .project-card  {
+        max-width: 80vw;
     }
 }
 
