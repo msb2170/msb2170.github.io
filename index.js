@@ -1,6 +1,10 @@
 const threeDots = document.getElementById('three-dots');
 const scrollUp = document.getElementById('scroll-up');
 const dateField = document.getElementById('date')
+const ul = document.querySelector('nav ul');
+
+const navLink = document.querySelectorAll('.nav-link');
+
 
 scrollUp.addEventListener('click', () => {
     window.scrollTo({
@@ -10,13 +14,11 @@ scrollUp.addEventListener('click', () => {
     })
 })
 
-const ul = document.querySelector('nav ul');
 
 threeDots.addEventListener('click', () => {
     ul.classList.toggle('show');
 });
 
-const navLink = document.querySelectorAll('.nav-link');
 
 navLink.forEach((link) => 
     link.addEventListener('click', () => {
