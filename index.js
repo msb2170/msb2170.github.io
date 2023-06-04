@@ -21,8 +21,11 @@ threeDots.addEventListener('click', () => {
 
 
 navLink.forEach((link) => 
-    link.addEventListener('click', () => {
+    link.addEventListener('click', function() {
         ul.classList.remove('show');
+        const current = document.getElementsByClassName("hover");
+        current[0].className = current[0].className.replace(" hover", "")
+        this.className += "hover"
     })
 );
 
