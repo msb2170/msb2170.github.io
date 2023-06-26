@@ -105,6 +105,12 @@ nav ul li {
     margin: auto;
 }
 
+.hero-img {
+    max-width: 45%;
+    height: 85vh;
+    padding-top: 1rem;
+}
+
 .bio {
     width: 25rem;
     padding: 0.625rem;
@@ -149,17 +155,21 @@ nav ul li {
 
 .skills-wrapper {
     display: grid;
-    grid-template-columns: auto auto;
-}
-
-.skills-wrapper img {
-    padding: 1.25rem;
-}
-
-.icon {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 0;
+  }
+  
+  .icon {
+    /* Adjust the width and height as per your requirements */
     width: 9.875rem;
     height: 9.25rem;
-}
+  }
+  
 
 .projects {
     padding: 32px 0;
@@ -381,7 +391,7 @@ footer {
     }
 
     .hero img {
-        max-width: 100%;
+        max-width: 50%;
         height: auto;
     }
 
