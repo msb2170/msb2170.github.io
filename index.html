@@ -1,210 +1,128 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Matthew Byrd | Developer</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="./styles.css">
-    </head>
-    <body>
-        <!--Navbar-->
-        <nav>
-            <h1>Matthew Byrd</h1>
-            <ul class="nav-container">
-                <li><a href="#about" class="nav-link">About Me</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact Me</a></li>
-            </ul>
-            <button class="three-dots" id="three-dots">
-                <span class="material-symbols-outlined">
-                    more_horiz
-                </span>
-            </button>
-        </nav>
-
-        <!--Hero Section-->
-        <section class="hero" id="about">
-            <img class="hero-img" loading="lazy" alt="matthew-byrd" src="./assets/Tallahassee_Cat_Photo.jpg" />
-            <div class="bio">
-                <h2 class="bio-title">About Me</h2>
-                <p class="bio-text">I'm a self-taught developer seeking to launch a second career in web development. I'm highly motivated to learn and add value to a team.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Matthew Byrd | Developer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="left-column-text">
+                <h1>Matthew Byrd</h1>
+                <h4>Full Stack Developer</h4>
+                <p>Making tested, performant web apps. Let's have a conversation.</p>
+                <p>Email: msb2170@gmail.com</p>
+                <p>Click <a href="https://docs.google.com/document/d/1jZaxV4oo8L2H7QWGPWtdtZ6Nzl5SLkWJ7DJmZr8A684/edit?usp=sharing" target="_blank">here</a> for resume</p>
             </div>
-        </section>
-
-        <!--More About-->
-        <section class="more-about">
-            <h2>My Background</h2>
-            <p>Like many others, my job became reliant on web services in 2020. I started wondering more and more how these technologies that started to make up my entire day really worked, and if I could build them myself. I decided to start to teach myself web development and got hooked on the cycle of hitting a roadblock and then overcoming that roadblock.</p>
-            <p>I love a good dark mode.</p>
-        </section>
-
-        <!--Skills Section-->
-        <section class="skills" id="skills">
-            <h2 class="skills-header">My Top Skills</h2>
-            <div class="skills-wrapper">
-                <div class="first-set">
-                    <img
-                        src="./assets/icons/icons8-html-5.svg"
-                        alt="html"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>HTML</p>
-                    <img
-                        src="./assets/icons/icons8-css3.svg"
-                        alt="css"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>CSS</p>
-                    <img
-                        src="./assets/icons/icons8-git.svg"
-                        alt="git"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>Git</p>
-                    <img
-                    src="./assets/icons/express-js.png" 
-                    alt="Express JS Logo"
-                    loading="lazy"
-                    class="icon"
-                    />
-                    <p>Express JS</p>
-                </div>
-                <div class="second-set">
-                    <img
-                        src="./assets/icons/icons8-javascript.svg"
-                        alt="JavaScript Logo"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>JavaScript</p>
-                    <img
-                        src="./assets/icons/icons8-react-native.svg"
-                        alt="React JS logo"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>React JS</p>
-                    <img
-                        src="./assets/icons/icons8-mongodb-480.png"
-                        alt="MongoDB Logo"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>MongoDB</p>
-                    <img
-                        src="./assets/icons/icons8-nodejs-480.png"
-                        alt="Node JS logo"
-                        loading="lazy"
-                        class="icon"
-                    />
-                    <p>NodeJS</p>
-
-                </div>
+            <div class="content-links-container">
+                <ul class="content-link" id="content-link">-Projects</ul>
+                <ul class="content-link" id="content-link">-Skills</ul>
             </div>
-        </section>
-        <!--Projects Section-->
-        <section class="projects" id='projects'>
-            <h2 class="projects-title">Highlighted Projects</h2>
-            <div class="projects-container">
-                <div class="projects-container project-card">
-                    <img
-                        src="./assets/icons/images/Screenshot 2022-11-11 132210.png"
-                        alt="a screenshot of a MERN Griffin Trivia showing the header and some of the table of questions"
-                        loading="lazy"
-                        class="project-pic"
-                    />
-                    <h3 class="project-title">MERN Griffin Trivia</h3>
-                    <p class="project-description">A trivia app featuring questions written by me. It's built on the full MERN stack and showcases CRUD operations.</p>
-                    <a href="http://www.merngriffintrivia.com/" target="_blank" class="project-link">See it in Action</a>
-                    <a href="https://github.com/msb2170/MERN-trivia" target="_blank" class="project-link">Check out the source code</a>
-                </div>
-                <div class="projects-container project-card">
-                    <img
-                        src="./assets/icons/images/bluraylibrary.png"
-                        alt="Top of the Blu-Ray Library App"
-                        loading="lazy"
-                        class="project-pic"
-                    />
-                    <h3 class="project-title">Blu-Ray Library</h3>
-                    <p class="project-description">An app that uses the Open Movie Database API to search for a title and then gives me the ability to add that title to my collection.</p>
-                    <a href="http://bluraylibrary.com" target="_blank" class="project-link">See it in Action</a>
-                    <a href="https://github.com/msb2170/br-library" target="_blank" class="project-link">Check out the source code</a>
-                </div>
-                <div class="projects-container project-card">
-                    <img
-                        src="./assets/icons/images/programmingthoughtsscreen.png"
-                        alt="An input box for the Daily Programming Thoughts app"
-                        loading="lazy"
-                        class="project-pic"
-                    />
-                    <h3 class="project-title">Daily Programming Thoughts</h3>
-                    <p class="project-description">A simple MERN stack message board app that I built to practice building an app from the ground up.</p>
-                    <a href="http://dailyprogrammingthoughts.com" target="_blank" class="project-link">See it in Action</a>
-                    <a href="https://github.com/msb2170/message-board" target="_blank" class="project-link">Check out the source code</a>
-                </div>
+            <div class="social-links-container">
+                <ul class="social-links-list">
+                <li class="social-link"><a href="http://www.github.com/msb2170"><img src="./assets/github.png" alt="github logo"></a></li>
+                <li class="social-link"><a href="http://www.linkedin.com/in/matthew-byrd-dev"><img src="./assets/linkedin.png" alt="LinkedIn logo"></a></li>
+                <li class="social-link"><a href="http://www.twitter.com/MattByrd01"><img src="./assets/twitter.png" alt="Twitter logo"></a></li>
+                </ul>
             </div>
-        </section>
-        <!--Contact Section--> 
-        <section class="contact" id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-form-container">
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/mwkzadkw" method="POST">
-                        <div class="form-control">
-                            <label for="name">Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="sender-name"
-                                placeholder="Enter your name"
-                                class="input-field"
-                                required
-                            />
-                        </div>
-                        <div class="form-control">
-                            <label for="message">Message</label>
-                            <textarea
-                                id="message"
-                                cols="60"
-                                rows="10"
-                                placeholder="Enter your message"
-                                name="message"
-                                class="input-field"
-                                required
-                            ></textarea>
-                        </div>
-                        <input
-                            type="submit"
-                            value="Submit"
-                            id="submit-btn"
-                            class="submit-btn"
-                        />
-                    </form>
+        </div>
+        <div class="right-column-container">
+            <div class="right-column">
+                    <!-- Content for the scrolling right column goes here -->
+                    <div class="about">
+                        <h2 class="about-title">About Me</h2>
+                        <p>I'm a full-stack developer with a background in libraries looking to launch a second career in web development. I'm highly self-motivated and eager to help out a team.
+                            Always making things, improving my skills, and looking for new ideas.
+                        </p>
+                    </div>
+                    <div class="projects-container" id="-Projects">
+                        <ul class="projects-list">
+                                <h2 class="projects-title">Selected Projects</h2>
+                                <li class="project-card">
+                                    <h3 class="project-card-title">Matlassian's Mira</h3>
+                                    <a href="https://crm-app-one.vercel.app/">
+                                    <img src="./assets/MIRA screenshot.png" alt="screenshot of Mira project" class="project-img">
+                                    </a>
+                                    <ul class="tag-list">
+                                        <p>Built using:</p>
+                                        <span class="tech-tag">NextJS</span>
+                                        <span class="tech-tag">TypeScript</span>
+                                        <span class="tech-tag">Tailwind CSS</span>
+                                        <span class="tech-tag">NextAuth</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                    </ul> 
+                                </li>
+                                <li class="project-card">
+                                    <h3 class="project-card-title">Blu-ray Library</h3>
+                                    <a href="http://bluraylibrary.com/">
+                                    <img src="./assets/bluraylibrary2.png" alt="screenshot of Blu-ray Library project" class="project-img">
+                                    </a>
+                                    <ul class="tag-list">
+                                        <p>Built using:</p>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">Node</span>
+                                    </ul>
+                                </li>
+                                <li class="project-card">
+                                    <h3 class="project-card-title">MERN Griffin Trivia</h3>
+                                    <a href="http://www.merngriffintrivia.com">
+                                    <img src="./assets/merngriffintrivia.png" alt="Screenshot of MERN Griffin Trivia project" class="project-img">
+                                    </a>
+                                    <ul class="tag-list">
+                                        <p>Built using:</p>
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">MongoDB</span>
+                                        <span class="tech-tag">Express</span>
+                                        <span class="tech-tag">Node</span>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <p>See <a href="http://github.com/msb2170">Github</a> for more projects</p>
+                    </div>
+                    <div class="background">
+                        <h2>Background</h2>
+                    <img src="./assets/cropped_portrait.jpg" alt="a picture of me" class="portrait">
+                    <p>
+                        After many years working in an academic library, I am looking for a new challenge. 
+                        I started learning web development in 2021 and got addicted to the cycle of learning a new skill,
+                        building something with that skill, and learning even more by debugging and deploying what I built.
+                        That cycle of continual learning and application to keep up with this fast-moving field is what keeps me 
+                        coming back to development, even through its frustrations. I am looking to work in a fast-paced environment
+                        with people who share that mindset.
+                    </p>
                 </div>
+                    <div class="skills-container" id="-Skills">
+                        <h2>Skills</h2>
+                        <ul class="skills-list">
+                            <li>JavaScript</li>
+                            <li>ReactJS</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>MongoDB</li>
+                            <li>ExpressJS</li>
+                            <li>NodeJS</li>
+                            <li>TypeScript</li>
+                            <li>NextJS</li>
+                            <li>Git/Github</li>
+                            <li>REST APIs</li>
+                            <li>Linux</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                            <li>Unit Testing</li>
+                            <li>Jest</li>
+                            <li>React Testing Library</li>
+                        </ul>
+                    </div>
             </div>
-        </section>
-        <!--Scroll to top-->
-        <button class="scroll-up" id="scroll-up">
-            <span class="material-symbols-outlined">
-                arrow_upward
-            </span>
-        </button>
-        <!--Footer Section-->
-        <footer class="footer">
-            <p class="copy">&copy; Copyright<p id="date" class="copy"><!--year comes in from the JS--></p></p>
-            <p class="author-detail">
-                Built by Matthew Byrd
-            </p>
-        </footer>
-        <!--Website Scripts-->
-        <script src="./index.js" async defer></script>
-    </body>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
 </html>
